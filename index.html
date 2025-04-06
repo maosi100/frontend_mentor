@@ -4,16 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.con" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap">
-  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body {
-      background-color: #F4D04E;
-      font-family: "Figtree", sans-serif;
-      line-height: 150%;
+      background-color: hsl(0, 0%, 8%);
+      font-family: "Inter", sans-serif;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: hsl(75, 94%, 57%);
+      margin-top: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+      margin-bottom: 0;
     }
 
     main {
@@ -24,75 +48,52 @@
     }
 
     .card {
-      background-color: #FFFFFF;
+      background-color: hsl(0, 0%, 12%);
       margin: auto;
-      max-width: 384px;
-      border-radius: 10px;
-      box-shadow: 8px 8px 0px 0px #000000;
-    }
-
-    .card:hover {
-      box-shadow: 16px 16px 0px 0px #000000;
-    }
-
-    .card-content {
-      margin: 24px;
-    }
-
-    img.banner-image {
-      border-radius: 10px;
-      margin: 24px 24px 0 24px;
-    }
-
-    .category-box {
-      background-color: #F4D04E;
-      border-radius: 4px;
-      width: fit-content;
-      margin-top: -8px;
-      margin-bottom: -4px;
-    }
-
-    .category-box p {
-      padding: 4px 9px;
-      font-weight: 800;
-      color: #111111;
-    }
-
-    .date {
-      color: #111111;
-      font-weight: 400;
-      margin-bottom: -4px;
-    }
-
-    .description {
-      color: #6B6B6B;
-      font-size: 16px;
-    }
-
-    .card-content h1 {
-      color: #111111;
-      font-size: 24px;
-    }
-
-    .card-content h1:hover {
-      color: #F0D40E;
-    }
-
-    .author-box {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      margin-bottom: -12px;
+      border-radius: 10px;
     }
 
-    .author-box img {
-      max-width: 32px;
-      max-height: 32px;
+    .card img {
+      border-radius: 100%;
+      max-width: 84px;
+      margin-top: 32px;
+      margin-bottom: 16px;
     }
 
-    .author-box p {
-      margin-left: 12px;
-      font-weight: 700;
+    ul {
+      list-style-type: none;
+      width: 320px;
+      padding: 0;
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      background-color: hsl(0, 0%, 20%);
+      border-radius: 10px;
+      padding: 16px 0;
+      text-align: center;
+      margin: 16px auto;
+    }
+
+    ul a {
+      font-weight: 600;
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    li:hover {
+      background-color: hsl(75, 94%, 57%);
+    }
+
+    li:hover a {
+      color: black;
     }
 
     .attribution {
@@ -109,27 +110,43 @@
 <body>
   <main>
     <div class="card">
-      <img class="banner-image" src="./assets/images/illustration-article.svg">
-      <div class="card-content">
-        <div class="category-box">
-          <p class="category">Learning</p>
-        </div>
-        <p class="date">Published 21 Dec 2023</p>
-        <h1>HTML & CSS foundations</h1>
-        <p class="description">These languages are the backbone of every website, defining structure, content, and
-          presentation</p>
-        <div class="author-box">
-          <img src="./assets/images/image-avatar.webp">
-          <p>Greg Hooper</p>
-        </div>
-      </div>
+      <img src="assets/images/avatar-jessica.jpeg">
+      <h1>Jessica Randall</h1>
+      <h2>London, United Kingdom</h2>
+      <p>"Front-end developer and avid reader."</p>
+      <ul>
+        <li>
+          <a href="">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Frontend Mentor
+          </a>
+        </li>
+        <li>
+          <a href="">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Instagram
+          </a>
+        </li>
+      </ul>
     </div>
   </main>
-
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Maxim</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
 </body>
